@@ -1,0 +1,60 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+ 
+ <H1>Stops Client </H1>
+ 
+
+ 
+<div class="row">
+
+ 
+<div class = "col-lg-6 pb-6" style="background-color:#888f99">
+  <div class="dropdown">
+  <button class= "btn btn-secondary dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown">Select Stop</button>    Data will refresh every 60 seconds
+  <div class="dropdown-menu"> 
+    <a class="dropdown-item" href="#" onclick="return false" (click)="getData(1)" >Stop 1</a>
+    <a class="dropdown-item" href="#" onclick="return false" (click)="getData(2)">Stop 2</a>
+    <a class="dropdown-item" href="#" onclick="return false" (click)="getData(3)">Stop 3</a>
+    <a class="dropdown-item" href="#" onclick="return false" (click)="getData(4)">Stop 4</a>
+    <a class="dropdown-item" href="#" onclick="return false" (click)="getData(5)">Stop 5</a>
+    <a class="dropdown-item" href="#" onclick="return false" (click)="getData(6)">Stop 6</a>
+    <a class="dropdown-item" href="#" onclick="return false" (click)="getData(7)">Stop 7</a>
+    <a class="dropdown-item" href="#" onclick="return false" (click)="getData(8)">Stop 8</a>
+    <a class="dropdown-item" href="#" onclick="return false" (click)="getData(9)">Stop 9</a>
+    <a class="dropdown-item" href="#" onclick="return false" (click)="getData(10)">Stop 10</a>
+  </div>
+</div>
+  
+
+
+ 
+  <table class="table">
+    <thead>
+      <th>Stop</th>
+      <th>Route</th>
+      <th>Next Stop Time</th>
+
+    </thead>
+    
+    <tbody>
+ 
+      <tr *ngFor="let stop of stops">
+        <td>{{stop.stopName}}</td>
+        <td>{{stop.route}}</td>
+        <td>{{stop.stopTime}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+ 
+
+
+<router-outlet></router-outlet>
